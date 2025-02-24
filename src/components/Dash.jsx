@@ -22,6 +22,10 @@ export default function Dash() {
         navigate('/')
     }
 
+    const goChat = () => {
+        navigate('/chat')
+    }
+
     return (
         <div className="flex flex-col gap-4 justify-center items-center h-screen ">
             <h1 className="text-2xl">仪表盘</h1>
@@ -36,7 +40,8 @@ export default function Dash() {
 
                 </div>
                 <div className=" m-4 px-20 py-40 bg-white ">
-                    <h1>服务</h1>
+                    <h1 className=" text-xl p-4">服务</h1>
+                    <button onClick={goChat} className="p-4">聊天</button>
                 </div>
             </div>
             { isOpenChangePassword ? <ChangePassword /> : null}

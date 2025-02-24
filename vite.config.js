@@ -8,6 +8,7 @@ import path from 'path';
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/chat/',
   plugins: [
     react(),
     
